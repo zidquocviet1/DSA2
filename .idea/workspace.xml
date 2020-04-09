@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d9ea0330-b69b-4448-ac46-c13be6abe093" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ProductRecord.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="e#329#330#0" expanded="true" />
+                <element signature="e#352#353#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/WarehouseBook.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="254" column="5" lean-forward="true" selection-start-line="254" selection-start-column="5" selection-end-line="254" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#437#438#0" expanded="true" />
+                <element signature="e#459#460#0" expanded="true" />
+                <element signature="e#573#574#0" expanded="true" />
+                <element signature="e#593#594#0" expanded="true" />
+                <element signature="e#700#701#0" expanded="true" />
+                <element signature="e#721#722#0" expanded="true" />
+                <element signature="method#getHeight#0;class#WarehouseBook#0" />
+                <element signature="method#getSize#1;class#WarehouseBook#0" />
+                <element signature="e#3518#3519#0" expanded="true" />
+                <element signature="e#3590#3591#0" expanded="true" />
+                <element signature="method#rotateLeft#0;class#WarehouseBook#0" />
+                <element signature="method#rotateRight#0;class#WarehouseBook#0" />
+                <element signature="method#makeBalance#0;class#WarehouseBook#0" />
+                <element signature="e#4749#4750#0" expanded="true" />
+                <element signature="e#4802#4803#0" expanded="true" />
+                <element signature="method#orderProduct#1;class#WarehouseBook#0" />
+                <element signature="method#findNode#0;class#WarehouseBook#0" />
+                <element signature="e#6347#6348#0" expanded="true" />
+                <element signature="e#6398#6399#0" expanded="true" />
+                <element signature="e#7719#7720#0" expanded="true" />
+                <element signature="e#7763#7764#0" expanded="true" />
+                <element signature="method#deleteProduct#0;class#WarehouseBook#0" />
+                <element signature="method#minValue#0;class#WarehouseBook#0" />
+                <element signature="method#RLN#0;class#WarehouseBook#0" />
+                <element signature="method#NRL#0;class#WarehouseBook#0" />
+                <element signature="method#simpleAVL_BST#0;class#WarehouseBook#0" />
+                <element signature="method#complexAVL_BST#0;class#WarehouseBook#0" />
+                <element signature="method#specialTraversal#0;class#WarehouseBook#0" />
+                <element signature="method#removeRedundantProduct#0;class#WarehouseBook#0" />
+                <element signature="method#getLevel#0;class#WarehouseBook#0" />
+                <element signature="method#treeToString#0;class#WarehouseBook#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/ProductRecord.java" />
+        <option value="$PROJECT_DIR$/graph_ds.txt" />
+        <option value="$PROJECT_DIR$/warehouse_new.txt" />
+        <option value="$PROJECT_DIR$/src/WarehouseBook.java" />
+        <option value="$PROJECT_DIR$/events.txt" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="675" />
+    <option name="y" value="-8" />
+    <option name="width" value="699" />
+    <option name="height" value="754" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Assignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Assignment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Assignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Assignment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586158972845" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\ComputerSience_TDT\DataStructure &amp; Algorithms2\Exercise\Assignment" />
+      <recent name="E:\ComputerSience_TDT\DataStructure &amp; Algorithms2\Exercise\Assignment\src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="WarehouseBook" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="WarehouseBook" />
+      <module name="Assignment" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.WarehouseBook" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d9ea0330-b69b-4448-ac46-c13be6abe093" name="Default Changelist" comment="" />
+      <created>1585727463560</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585727463560</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29425114" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.292437" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.49243698" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32941177" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="556" selection-start-line="556" selection-end-line="556" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/StringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
+          <folding>
+            <element signature="e#2896#2897#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/AbstractStringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+          <folding>
+            <element signature="e#1327#1328#0" expanded="true" />
+            <element signature="e#1369#1370#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graph_ds.txt" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="892" selection-start-line="892" selection-end-line="892" />
+          <folding>
+            <element signature="e#33919#33920#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warehouse.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warehouse_new.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/events.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="31" selection-start-column="31" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ProductRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#329#330#0" expanded="true" />
+            <element signature="e#352#353#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WarehouseBook.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="254" column="5" lean-forward="true" selection-start-line="254" selection-start-column="5" selection-end-line="254" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#437#438#0" expanded="true" />
+            <element signature="e#459#460#0" expanded="true" />
+            <element signature="e#573#574#0" expanded="true" />
+            <element signature="e#593#594#0" expanded="true" />
+            <element signature="e#700#701#0" expanded="true" />
+            <element signature="e#721#722#0" expanded="true" />
+            <element signature="method#getHeight#0;class#WarehouseBook#0" />
+            <element signature="method#getSize#1;class#WarehouseBook#0" />
+            <element signature="e#3518#3519#0" expanded="true" />
+            <element signature="e#3590#3591#0" expanded="true" />
+            <element signature="method#rotateLeft#0;class#WarehouseBook#0" />
+            <element signature="method#rotateRight#0;class#WarehouseBook#0" />
+            <element signature="method#makeBalance#0;class#WarehouseBook#0" />
+            <element signature="e#4749#4750#0" expanded="true" />
+            <element signature="e#4802#4803#0" expanded="true" />
+            <element signature="method#orderProduct#1;class#WarehouseBook#0" />
+            <element signature="method#findNode#0;class#WarehouseBook#0" />
+            <element signature="e#6347#6348#0" expanded="true" />
+            <element signature="e#6398#6399#0" expanded="true" />
+            <element signature="e#7719#7720#0" expanded="true" />
+            <element signature="e#7763#7764#0" expanded="true" />
+            <element signature="method#deleteProduct#0;class#WarehouseBook#0" />
+            <element signature="method#minValue#0;class#WarehouseBook#0" />
+            <element signature="method#RLN#0;class#WarehouseBook#0" />
+            <element signature="method#NRL#0;class#WarehouseBook#0" />
+            <element signature="method#simpleAVL_BST#0;class#WarehouseBook#0" />
+            <element signature="method#complexAVL_BST#0;class#WarehouseBook#0" />
+            <element signature="method#specialTraversal#0;class#WarehouseBook#0" />
+            <element signature="method#removeRedundantProduct#0;class#WarehouseBook#0" />
+            <element signature="method#getLevel#0;class#WarehouseBook#0" />
+            <element signature="method#treeToString#0;class#WarehouseBook#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
