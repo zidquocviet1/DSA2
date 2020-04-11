@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9ea0330-b69b-4448-ac46-c13be6abe093" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/events.txt" beforeDir="false" afterPath="$PROJECT_DIR$/events.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Assignment/WarehouseBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment/WarehouseBook.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WarehouseBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WarehouseBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/warehouse_new.txt" beforeDir="false" afterPath="$PROJECT_DIR$/warehouse_new.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Assignment/WarehouseBook$WarehouseNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment/WarehouseBook$WarehouseNode.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/WarehouseBook.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="416" column="56" lean-forward="true" selection-start-line="416" selection-start-column="56" selection-end-line="416" selection-end-column="56" />
+            <state relative-caret-position="135">
+              <caret line="435" lean-forward="true" selection-start-line="435" selection-end-line="435" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#437#438#0" expanded="true" />
@@ -67,17 +63,16 @@
                 <element signature="method#removeRedundantProduct#0;class#WarehouseBook#0" />
                 <element signature="method#getLevel#0;class#WarehouseBook#0" />
                 <element signature="method#getInforProduct#0;class#WarehouseBook#0" />
-                <element signature="method#treeToString#0;class#WarehouseBook#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/events.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="4" selection-start-column="4" selection-end-column="4" />
+              <caret column="34" selection-start-column="34" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -86,7 +81,7 @@
         <entry file="file://$PROJECT_DIR$/warehouse_new.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="33" lean-forward="true" selection-start-column="33" selection-end-column="33" />
+              <caret column="41" lean-forward="true" selection-start-column="41" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -193,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586410228954</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update">
+      <created>1586587020365</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586587020365</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -209,14 +211,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.292437" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.292437" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.49243698" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32941177" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32941177" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32941177" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -330,10 +332,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/events.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="34" selection-start-column="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warehouse_new.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="41" lean-forward="true" selection-start-column="41" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/WarehouseBook.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="416" column="56" lean-forward="true" selection-start-line="416" selection-start-column="56" selection-end-line="416" selection-end-column="56" />
+        <state relative-caret-position="135">
+          <caret line="435" lean-forward="true" selection-start-line="435" selection-end-line="435" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#437#438#0" expanded="true" />
@@ -365,22 +381,7 @@
             <element signature="method#removeRedundantProduct#0;class#WarehouseBook#0" />
             <element signature="method#getLevel#0;class#WarehouseBook#0" />
             <element signature="method#getInforProduct#0;class#WarehouseBook#0" />
-            <element signature="method#treeToString#0;class#WarehouseBook#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/warehouse_new.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="33" lean-forward="true" selection-start-column="33" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/events.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="4" selection-start-column="4" selection-end-column="4" />
         </state>
       </provider>
     </entry>
