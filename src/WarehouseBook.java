@@ -162,11 +162,6 @@ public class WarehouseBook {
 		return 1 + Math.max(getHeight(x.getLeft()), getHeight(x.getRight()));
 	}
 
-	public int getSize(WarehouseNode x){
-		if (x == null) return 0;
-		return x.size;
-	}
-
 	private int checkBalance(WarehouseNode x){
 		return this.getHeight(x.getLeft()) - this.getHeight(x.getRight());
 	}
@@ -191,6 +186,8 @@ public class WarehouseBook {
 		return y;
 	}
 
+	private void rotateLeftRight(){}
+	private void rotateRightLeft(){}
 	//this method to check the current node is balance or not
 	private WarehouseNode makeBalance(WarehouseNode x){
 		if (checkBalance(x) < -1){
@@ -265,15 +262,14 @@ public class WarehouseBook {
 		int cmp = idProduct.compareTo(root.getRecord().getProductID());
 		if (cmp < 0) {
 			root.setLeft(addProductAVL(quantity, idProduct, root.getLeft()));
-			root = makeBalance(root);
+			makeBalance(root);
 		}
 		else if (cmp > 0) {
 			root.setRight(addProductAVL(quantity, idProduct, root.getRight()));
-			root = makeBalance(root);
+			makeBalance(root);
 		}
 		else
 			root.getRecord().setQuantity(root.getRecord().getQuantity() + quantity);
-		//root.setSize(1 + root.size(root.getLeft()) + root.size(root.getRight()));
 		return root;
 	}
 	private WarehouseNode addProduct(Integer quantity, Integer idProduct, WarehouseNode root){
@@ -287,7 +283,6 @@ public class WarehouseBook {
 			root.setRight(addProduct(quantity, idProduct, root.getRight()));
 		else
 			root.getRecord().setQuantity(root.getRecord().getQuantity() + quantity);
-		//root.setSize(1 + root.size(root.getLeft()) + root.size(root.getRight()));
 		return root;
 	}
 
@@ -338,7 +333,6 @@ public class WarehouseBook {
 	}
 	private List<String> NRL(WarehouseNode root, List<String> output){
 		if (root == null) return null;
-
 		else{
 			String quantity = String.valueOf(root.getRecord().getQuantity());
 			quantity = quantity.length() == 1 ? "0"+quantity : quantity;
@@ -347,7 +341,6 @@ public class WarehouseBook {
 			NRL(root.getRight(), output);
 			NRL(root.getLeft(), output);
 		}
-
 		return output;
 	}
 	private String LNR(WarehouseNode root, StringBuilder output){
@@ -415,19 +408,19 @@ public class WarehouseBook {
 	}
 	private WarehouseNode specialTraversal(List<String> RLN, Integer idProduct, Integer quantity){
 		Map<Integer, Integer> product = new HashMap<>();
-		char[] temp;
+		List<Integer> infor;
 		int stockQuantity = quantity;
 
 		for (String s : RLN){
-			temp = s.toCharArray();
-			product.put(Integer.parseInt(temp[0]+""+temp[1]+""+temp[2]), Integer.parseInt(temp[3]+""+temp[4]));
+			infor = getInforProduct(s);
+			product.put(infor.get(0), infor.get(1));
 		}
 
 		if (product.containsKey(idProduct)){
 			stockQuantity += product.get(idProduct);
 
 			String productQuantity = String.valueOf(product.get(idProduct));
-			productQuantity = productQuantity.length() == 1? "0"+productQuantity: productQuantity;
+			productQuantity = productQuantity.length() == 1 ? "0"+productQuantity : productQuantity;
 			RLN.remove(idProduct + "" + productQuantity);
 		}
 
@@ -435,8 +428,8 @@ public class WarehouseBook {
 		WarehouseNode root = new WarehouseNode(pr);
 
 		for (String item : RLN){
-			temp = item.toCharArray();
-			root = addProduct(Integer.parseInt(temp[3]+""+temp[4]), Integer.parseInt(temp[0]+""+temp[1]+""+temp[2]), root);
+			infor = getInforProduct(item);
+			root = addProduct(infor.get(1), infor.get(0), root);
 		}
 		return root;
 	}
@@ -489,9 +482,13 @@ public class WarehouseBook {
 		if (root == null) return;
 
 		String quantity = String.valueOf(root.getRecord().getQuantity());
-		quantity = quantity.length() == 1 ? "0"+quantity : quantity; // dinh dang lai quantity theo kieu string
-		// vi du: 1-9 -> 01->09
-		output.append(String.valueOf(root.getRecord().getProductID() + "" +quantity + ""));
+		String idProduct = String.valueOf(root.getRecord().getProductID());
+
+		quantity = quantity.length() == 1 ? "0"+quantity : quantity;
+		while (idProduct.length() != 3)
+			idProduct = "0"+idProduct;
+
+		output.append(idProduct + "" + quantity);
 
 		if (root.getLeft() == null && root.getRight() == null) return;
 

@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9ea0330-b69b-4448-ac46-c13be6abe093" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/Assignment/WarehouseBook$WarehouseNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment/WarehouseBook$WarehouseNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events.txt" beforeDir="false" afterPath="$PROJECT_DIR$/events.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Assignment/WarehouseBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment/WarehouseBook.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WarehouseBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WarehouseBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warehouse_new.txt" beforeDir="false" afterPath="$PROJECT_DIR$/warehouse_new.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,9 +20,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ProductRecord.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="149">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
               <folding>
+                <element signature="e#204#205#0" expanded="true" />
                 <element signature="e#226#227#0" expanded="true" />
                 <element signature="e#329#330#0" expanded="true" />
                 <element signature="e#352#353#0" expanded="true" />
@@ -30,39 +35,31 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/WarehouseBook.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="435" lean-forward="true" selection-start-line="435" selection-end-line="435" />
+            <state relative-caret-position="126">
+              <caret line="167" lean-forward="true" selection-start-line="167" selection-end-line="167" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#437#438#0" expanded="true" />
-                <element signature="e#459#460#0" expanded="true" />
-                <element signature="e#573#574#0" expanded="true" />
-                <element signature="e#593#594#0" expanded="true" />
-                <element signature="e#700#701#0" expanded="true" />
-                <element signature="e#721#722#0" expanded="true" />
-                <element signature="method#getHeight#0;class#WarehouseBook#0" />
-                <element signature="method#getSize#1;class#WarehouseBook#0" />
-                <element signature="e#3518#3519#0" expanded="true" />
-                <element signature="e#3590#3591#0" expanded="true" />
-                <element signature="method#rotateLeft#0;class#WarehouseBook#0" />
+                <element signature="e#469#470#0" expanded="true" />
+                <element signature="e#491#492#0" expanded="true" />
+                <element signature="e#605#606#0" expanded="true" />
+                <element signature="e#625#626#0" expanded="true" />
+                <element signature="e#670#671#0" expanded="true" />
+                <element signature="e#695#696#0" expanded="true" />
+                <element signature="e#732#733#0" expanded="true" />
+                <element signature="e#753#754#0" expanded="true" />
+                <element signature="e#800#801#0" expanded="true" />
+                <element signature="e#827#828#0" expanded="true" />
+                <element signature="e#3550#3551#0" expanded="true" />
+                <element signature="e#3622#3623#0" expanded="true" />
                 <element signature="method#rotateRight#0;class#WarehouseBook#0" />
-                <element signature="method#makeBalance#0;class#WarehouseBook#0" />
-                <element signature="e#4749#4750#0" expanded="true" />
-                <element signature="e#4802#4803#0" expanded="true" />
                 <element signature="method#orderProduct#1;class#WarehouseBook#0" />
                 <element signature="method#findNode#0;class#WarehouseBook#0" />
-                <element signature="e#6347#6348#0" expanded="true" />
-                <element signature="e#6398#6399#0" expanded="true" />
                 <element signature="method#deleteProduct#0;class#WarehouseBook#0" />
                 <element signature="method#minValue#0;class#WarehouseBook#0" />
                 <element signature="method#RLN#0;class#WarehouseBook#0" />
-                <element signature="method#NRL#0;class#WarehouseBook#0" />
-                <element signature="method#LNR#0;class#WarehouseBook#0" />
-                <element signature="method#simpleAVL_BST#0;class#WarehouseBook#0" />
-                <element signature="method#complexAVL_BST#0;class#WarehouseBook#0" />
+                <element signature="method#specialTraversal#0;class#WarehouseBook#0" />
                 <element signature="method#removeRedundantProduct#0;class#WarehouseBook#0" />
                 <element signature="method#getLevel#0;class#WarehouseBook#0" />
-                <element signature="method#getInforProduct#0;class#WarehouseBook#0" />
               </folding>
             </state>
           </provider>
@@ -72,16 +69,7 @@
         <entry file="file://$PROJECT_DIR$/events.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="34" selection-start-column="34" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/warehouse_new.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="41" lean-forward="true" selection-start-column="41" selection-end-column="41" />
+              <caret column="33" selection-start-column="33" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -135,7 +123,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586158972845" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586621865480" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -202,7 +190,7 @@
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30786687" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24205749" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -218,7 +206,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32941177" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32941177" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32941177" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -265,10 +253,36 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update" />
     <option name="LAST_COMMIT_MESSAGE" value="update" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/WarehouseBook.java</url>
+          <line>142</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/HashMap.java">
@@ -307,24 +321,50 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/graph_ds.txt" />
+    <entry file="file://$PROJECT_DIR$/warehouse.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="3098" selection-start-line="3098" selection-end-line="3098" />
+          <folding>
+            <element signature="e#121769#121770#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Integer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="892" selection-start-line="892" selection-end-line="892" />
+        <state relative-caret-position="92">
+          <caret line="459" selection-start-line="459" selection-end-line="459" />
           <folding>
+            <element signature="e#33891#33892#0" expanded="true" />
             <element signature="e#33919#33920#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/warehouse.txt">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/warehouse_new.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="4696" selection-start-column="4696" selection-end-column="4696" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/events.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="33" selection-start-column="33" selection-end-column="33" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ProductRecord.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="149">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
           <folding>
+            <element signature="e#204#205#0" expanded="true" />
             <element signature="e#226#227#0" expanded="true" />
             <element signature="e#329#330#0" expanded="true" />
             <element signature="e#352#353#0" expanded="true" />
@@ -332,55 +372,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/events.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="34" selection-start-column="34" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/warehouse_new.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="41" lean-forward="true" selection-start-column="41" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/WarehouseBook.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="435" lean-forward="true" selection-start-line="435" selection-end-line="435" />
+        <state relative-caret-position="126">
+          <caret line="167" lean-forward="true" selection-start-line="167" selection-end-line="167" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
-            <element signature="e#459#460#0" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#593#594#0" expanded="true" />
-            <element signature="e#700#701#0" expanded="true" />
-            <element signature="e#721#722#0" expanded="true" />
-            <element signature="method#getHeight#0;class#WarehouseBook#0" />
-            <element signature="method#getSize#1;class#WarehouseBook#0" />
-            <element signature="e#3518#3519#0" expanded="true" />
-            <element signature="e#3590#3591#0" expanded="true" />
-            <element signature="method#rotateLeft#0;class#WarehouseBook#0" />
+            <element signature="e#469#470#0" expanded="true" />
+            <element signature="e#491#492#0" expanded="true" />
+            <element signature="e#605#606#0" expanded="true" />
+            <element signature="e#625#626#0" expanded="true" />
+            <element signature="e#670#671#0" expanded="true" />
+            <element signature="e#695#696#0" expanded="true" />
+            <element signature="e#732#733#0" expanded="true" />
+            <element signature="e#753#754#0" expanded="true" />
+            <element signature="e#800#801#0" expanded="true" />
+            <element signature="e#827#828#0" expanded="true" />
+            <element signature="e#3550#3551#0" expanded="true" />
+            <element signature="e#3622#3623#0" expanded="true" />
             <element signature="method#rotateRight#0;class#WarehouseBook#0" />
-            <element signature="method#makeBalance#0;class#WarehouseBook#0" />
-            <element signature="e#4749#4750#0" expanded="true" />
-            <element signature="e#4802#4803#0" expanded="true" />
             <element signature="method#orderProduct#1;class#WarehouseBook#0" />
             <element signature="method#findNode#0;class#WarehouseBook#0" />
-            <element signature="e#6347#6348#0" expanded="true" />
-            <element signature="e#6398#6399#0" expanded="true" />
             <element signature="method#deleteProduct#0;class#WarehouseBook#0" />
             <element signature="method#minValue#0;class#WarehouseBook#0" />
             <element signature="method#RLN#0;class#WarehouseBook#0" />
-            <element signature="method#NRL#0;class#WarehouseBook#0" />
-            <element signature="method#LNR#0;class#WarehouseBook#0" />
-            <element signature="method#simpleAVL_BST#0;class#WarehouseBook#0" />
-            <element signature="method#complexAVL_BST#0;class#WarehouseBook#0" />
+            <element signature="method#specialTraversal#0;class#WarehouseBook#0" />
             <element signature="method#removeRedundantProduct#0;class#WarehouseBook#0" />
             <element signature="method#getLevel#0;class#WarehouseBook#0" />
-            <element signature="method#getInforProduct#0;class#WarehouseBook#0" />
           </folding>
         </state>
       </provider>
