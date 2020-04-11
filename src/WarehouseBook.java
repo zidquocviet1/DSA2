@@ -1,3 +1,5 @@
+import org.omg.CORBA.INTERNAL;
+
 import java.io.*;
 import java.util.*;
 
@@ -275,9 +277,9 @@ public class WarehouseBook {
 		return root;
 	}
 	private WarehouseNode addProduct(Integer quantity, Integer idProduct, WarehouseNode root){
-		if (root == null){
+		if (root == null)
 			return new WarehouseNode(new ProductRecord(idProduct, quantity));
-		}
+
 		int cmp = idProduct.compareTo(root.getRecord().getProductID());
 		if (cmp < 0)
 			root.setLeft(addProduct(quantity, idProduct, root.getLeft()));
@@ -365,45 +367,47 @@ public class WarehouseBook {
 	}
 	private WarehouseNode simpleAVL_BST(String Inorder){
 		String[] temp = Inorder.split(" ");
+		List<Integer> infor;
 		int size = temp.length;
-		char[] product = temp[size/2].toCharArray();
-		int idProduct = Integer.parseInt(product[0]+""+product[1]+""+product[2]);
-		int quantity = Integer.parseInt(product[3]+""+product[4]);
+		infor = getInforProduct(temp[size/2]);
+		int idProduct = infor.get(0);
+		int quantity = infor.get(1);
 
 		ProductRecord pr = new ProductRecord(idProduct, quantity);
 		WarehouseNode root = new WarehouseNode(pr);
 
 		for (int i = 0; i < size; i++){
-			product = temp[i].toCharArray();
-			idProduct = Integer.parseInt(product[0]+""+product[1]+""+product[2]);
-			quantity = Integer.parseInt(product[3]+""+product[4]);
+			if (i != size / 2) {
+				infor = getInforProduct(temp[i]);
+				idProduct = infor.get(0);
+				quantity = infor.get(1);
 
-			if (i != size / 2)
-				root = addProduct(quantity,idProduct, root);
+				root = addProduct(quantity, idProduct, root);
+			}
 		}
 		return root;
 	}
 	private WarehouseNode complexAVL_BST(List<String> NRL){
-		char[] temp;
+		List<Integer> infor;
 		int idProduct, quantity;
 
-		temp = NRL.get(0).toCharArray();
-		idProduct = Integer.parseInt(temp[0]+""+temp[1]+""+temp[2]);
-		quantity = Integer.parseInt(temp[3]+""+temp[4]);
+		infor = getInforProduct(NRL.get(0));
+		idProduct = infor.get(0);
+		quantity = infor.get(1);
 
 		ProductRecord pr = new ProductRecord(idProduct, quantity);
 		WarehouseNode root = new WarehouseNode(pr);
 
-		temp = NRL.get(1).toCharArray();
-		idProduct = Integer.parseInt(temp[0]+""+temp[1]+""+temp[2]);
-		quantity = Integer.parseInt(temp[3]+""+temp[4]);
+		infor = getInforProduct(NRL.get(1));
+		idProduct = infor.get(0);
+		quantity = infor.get(1);
 
 		root = addProduct(quantity, idProduct, root);
 
 		for (int i = 2; i < NRL.size(); i++){
-			temp = NRL.get(i).toCharArray();
-			idProduct = Integer.parseInt(temp[0]+""+temp[1]+""+temp[2]);
-			quantity = Integer.parseInt(temp[3]+""+temp[4]);
+			infor = getInforProduct(NRL.get(i));
+			idProduct = infor.get(0);
+			quantity = infor.get(1);
 
 			root = addProductAVL(quantity, idProduct, root);
 		}
@@ -458,6 +462,28 @@ public class WarehouseBook {
 		return listDepth;
 	}
 
+	private List<Integer> getInforProduct(String product){
+		List<Integer> infor = new ArrayList<>();
+		char[] temp = product.toCharArray();
+		int idProduct, quantity;
+
+		if (temp.length == 3){
+			idProduct = Integer.parseInt(temp[0]+"");
+			quantity = Integer.parseInt(temp[1]+""+temp[2]);
+		}
+		else if (temp.length == 4){
+			idProduct = Integer.parseInt(temp[0]+""+temp[1]);
+			quantity = Integer.parseInt(temp[2]+""+temp[3]);
+		}
+		else{
+			idProduct = Integer.parseInt(temp[0]+""+temp[1]+""+temp[2]);
+			quantity = Integer.parseInt(temp[3]+""+temp[4]);
+		}
+		infor.add(idProduct);
+		infor.add(quantity);
+
+		return infor;
+	}
 	// convert tree to string
 	private void treeToString(WarehouseNode root) {
 		if (root == null) return;
