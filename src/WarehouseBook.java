@@ -1,5 +1,3 @@
-import org.omg.CORBA.INTERNAL;
-
 import java.io.*;
 import java.util.*;
 
@@ -46,6 +44,7 @@ public class WarehouseBook {
 		public int getBalance() {
 			return balance;
 		}
+		public int getHeight() { return this.height; }
 
 		public void setBalance(int balance) {
 			this.balance = balance;
@@ -185,9 +184,6 @@ public class WarehouseBook {
 
 		return y;
 	}
-
-	private void rotateLeftRight(){}
-	private void rotateRightLeft(){}
 	//this method to check the current node is balance or not
 	private WarehouseNode makeBalance(WarehouseNode x){
 		if (checkBalance(x) < -1){
@@ -245,6 +241,7 @@ public class WarehouseBook {
 		}
 		return parent;
 	}
+
 	// this method to set the quantity of product
 	private void setQuantity(WarehouseNode root, Integer finalQuantity){
 		if (finalQuantity <= 0)
@@ -262,14 +259,15 @@ public class WarehouseBook {
 		int cmp = idProduct.compareTo(root.getRecord().getProductID());
 		if (cmp < 0) {
 			root.setLeft(addProductAVL(quantity, idProduct, root.getLeft()));
-			makeBalance(root);
+			return makeBalance(root);
 		}
 		else if (cmp > 0) {
 			root.setRight(addProductAVL(quantity, idProduct, root.getRight()));
-			makeBalance(root);
+			return makeBalance(root);
 		}
 		else
 			root.getRecord().setQuantity(root.getRecord().getQuantity() + quantity);
+		root.setHeight(1 + Math.max(getHeight(root.getLeft()), getHeight(root.getRight())));
 		return root;
 	}
 	private WarehouseNode addProduct(Integer quantity, Integer idProduct, WarehouseNode root){
@@ -457,23 +455,15 @@ public class WarehouseBook {
 
 	private List<Integer> getInforProduct(String product){
 		List<Integer> infor = new ArrayList<>();
-		char[] temp = product.toCharArray();
-		int idProduct, quantity;
+		StringBuilder idProduct = new StringBuilder();
+		int size = product.length();
 
-		if (temp.length == 3){
-			idProduct = Integer.parseInt(temp[0]+"");
-			quantity = Integer.parseInt(temp[1]+""+temp[2]);
+		for (int i = 0; i < size - 2; i++){
+			idProduct.append(product.charAt(i));
 		}
-		else if (temp.length == 4){
-			idProduct = Integer.parseInt(temp[0]+""+temp[1]);
-			quantity = Integer.parseInt(temp[2]+""+temp[3]);
-		}
-		else{
-			idProduct = Integer.parseInt(temp[0]+""+temp[1]+""+temp[2]);
-			quantity = Integer.parseInt(temp[3]+""+temp[4]);
-		}
-		infor.add(idProduct);
-		infor.add(quantity);
+
+		infor.add(Integer.parseInt(idProduct.toString()));
+		infor.add(Integer.parseInt(product.charAt(size-2)+""+product.charAt(size-1)));
 
 		return infor;
 	}
