@@ -14,8 +14,7 @@ public class WarehouseBook {
 			this.record = record;
 			this.left = null;
 			this.right = null;
-			this.height = 0;
-			this.size = 0;
+			this.height = 1;
 		}
 		public ProductRecord getRecord() {
 			return record;
@@ -145,7 +144,6 @@ public class WarehouseBook {
 			}
 		}
 	}
-	
 	@Override
 	public String toString(){
 		if (root != null) {
@@ -158,7 +156,7 @@ public class WarehouseBook {
 
 	private int getHeight(WarehouseNode x){
 		if (x == null) return 0;
-		return 1 + Math.max(getHeight(x.getLeft()), getHeight(x.getRight()));
+		return x.getHeight();
 	}
 
 	private int checkBalance(WarehouseNode x){
@@ -167,6 +165,7 @@ public class WarehouseBook {
 
 	private WarehouseNode rotateLeft(WarehouseNode x){
 		WarehouseNode y = x.getRight();
+
 		x.setRight(y.getLeft());
 		y.setLeft(x);
 		x.setHeight(1 + Math.max(this.getHeight(x.getLeft()), this.getHeight(x.getRight())));
@@ -177,7 +176,8 @@ public class WarehouseBook {
 
 	private WarehouseNode rotateRight(WarehouseNode x){
 		WarehouseNode y = x.getLeft();
-		x.setRight(y.getRight());
+
+		x.setLeft(y.getRight());
 		y.setRight(x);
 		x.setHeight(1 + Math.max(this.getHeight(x.getLeft()), this.getHeight(x.getRight())));
 		y.setHeight(1 + Math.max(this.getHeight(y.getLeft()), this.getHeight(y.getRight())));
@@ -257,17 +257,15 @@ public class WarehouseBook {
 			return new WarehouseNode(new ProductRecord(idProduct, quantity));
 
 		int cmp = idProduct.compareTo(root.getRecord().getProductID());
-		if (cmp < 0) {
+		if (cmp < 0)
 			root.setLeft(addProductAVL(quantity, idProduct, root.getLeft()));
-			return makeBalance(root);
-		}
-		else if (cmp > 0) {
+		else if (cmp > 0)
 			root.setRight(addProductAVL(quantity, idProduct, root.getRight()));
-			return makeBalance(root);
-		}
 		else
 			root.getRecord().setQuantity(root.getRecord().getQuantity() + quantity);
+
 		root.setHeight(1 + Math.max(getHeight(root.getLeft()), getHeight(root.getRight())));
+		root = makeBalance(root);
 		return root;
 	}
 	private WarehouseNode addProduct(Integer quantity, Integer idProduct, WarehouseNode root){
@@ -281,6 +279,7 @@ public class WarehouseBook {
 			root.setRight(addProduct(quantity, idProduct, root.getRight()));
 		else
 			root.getRecord().setQuantity(root.getRecord().getQuantity() + quantity);
+		root.setHeight(1 + Math.max(getHeight(root.getLeft()), getHeight(root.getRight())));
 		return root;
 	}
 
@@ -288,10 +287,9 @@ public class WarehouseBook {
 		root = deleteProduct(root, idProduct);
 	}
 	private WarehouseNode deleteProduct(WarehouseNode root, Integer idProduct){
-		if (root == null) return root;
+		if (root == null) return null;
 
 		int cmp = idProduct.compareTo(root.getRecord().getProductID());
-
 		if (cmp < 0)
 			root.setLeft(deleteProduct(root.getLeft(), idProduct));
 		else if (cmp > 0)
