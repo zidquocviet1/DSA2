@@ -4,7 +4,6 @@
     <list default="true" id="d9ea0330-b69b-4448-ac46-c13be6abe093" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/events.txt" beforeDir="false" afterPath="$PROJECT_DIR$/events.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Assignment/WarehouseBook$WarehouseNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment/WarehouseBook$WarehouseNode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Assignment/WarehouseBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment/WarehouseBook.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WarehouseBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WarehouseBook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/warehouse_new.txt" beforeDir="false" afterPath="$PROJECT_DIR$/warehouse_new.txt" afterDir="false" />
@@ -21,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/WarehouseBook.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="148" column="27" lean-forward="true" selection-start-line="148" selection-start-column="27" selection-end-line="148" selection-end-column="27" />
+            <state relative-caret-position="1293">
+              <caret line="172" column="5" selection-start-line="163" selection-start-column="53" selection-end-line="172" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#419#420#0" expanded="true" />
@@ -35,21 +34,6 @@
                 <element signature="e#703#704#0" expanded="true" />
                 <element signature="e#750#751#0" expanded="true" />
                 <element signature="e#777#778#0" expanded="true" />
-                <element signature="method#rotateLeft#0;class#WarehouseBook#0" />
-                <element signature="method#rotateRight#0;class#WarehouseBook#0" />
-                <element signature="method#orderProduct#1;class#WarehouseBook#0" />
-                <element signature="method#findNode#0;class#WarehouseBook#0" />
-                <element signature="method#deleteProduct#0;class#WarehouseBook#0" />
-                <element signature="method#minValue#0;class#WarehouseBook#0" />
-                <element signature="method#RLN#0;class#WarehouseBook#0" />
-                <element signature="method#NRL#0;class#WarehouseBook#0" />
-                <element signature="method#LNR#0;class#WarehouseBook#0" />
-                <element signature="method#simpleAVL_BST#0;class#WarehouseBook#0" />
-                <element signature="method#specialTraversal#0;class#WarehouseBook#0" />
-                <element signature="method#removeRedundantProduct#0;class#WarehouseBook#0" />
-                <element signature="method#getLevel#0;class#WarehouseBook#0" />
-                <element signature="method#getInforProduct#0;class#WarehouseBook#0" />
-                <element signature="method#treeToString#0;class#WarehouseBook#0" />
               </folding>
             </state>
           </provider>
@@ -59,7 +43,7 @@
         <entry file="file://$PROJECT_DIR$/warehouse_new.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="59" selection-start-column="59" selection-end-column="59" />
+              <caret column="60" selection-start-column="60" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -68,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/events.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="65" selection-start-column="65" selection-end-column="65" />
+              <caret column="61" selection-start-column="61" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -83,8 +67,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/ProductRecord.java" />
         <option value="$PROJECT_DIR$/graph_ds.txt" />
-        <option value="$PROJECT_DIR$/src/WarehouseBook.java" />
         <option value="$PROJECT_DIR$/warehouse_new.txt" />
+        <option value="$PROJECT_DIR$/src/WarehouseBook.java" />
         <option value="$PROJECT_DIR$/events.txt" />
       </list>
     </option>
@@ -100,6 +84,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -116,8 +102,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -189,7 +173,7 @@
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2685325" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -198,7 +182,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.292437" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28235295" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.49243698" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -332,20 +316,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/events.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="65" selection-start-column="65" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/warehouse_new.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="59" selection-start-column="59" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ProductRecord.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="103">
@@ -359,10 +329,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/events.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="61" selection-start-column="61" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warehouse_new.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="60" selection-start-column="60" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/WarehouseBook.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="148" column="27" lean-forward="true" selection-start-line="148" selection-start-column="27" selection-end-line="148" selection-end-column="27" />
+        <state relative-caret-position="1293">
+          <caret line="172" column="5" selection-start-line="163" selection-start-column="53" selection-end-line="172" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#419#420#0" expanded="true" />
@@ -375,21 +359,6 @@
             <element signature="e#703#704#0" expanded="true" />
             <element signature="e#750#751#0" expanded="true" />
             <element signature="e#777#778#0" expanded="true" />
-            <element signature="method#rotateLeft#0;class#WarehouseBook#0" />
-            <element signature="method#rotateRight#0;class#WarehouseBook#0" />
-            <element signature="method#orderProduct#1;class#WarehouseBook#0" />
-            <element signature="method#findNode#0;class#WarehouseBook#0" />
-            <element signature="method#deleteProduct#0;class#WarehouseBook#0" />
-            <element signature="method#minValue#0;class#WarehouseBook#0" />
-            <element signature="method#RLN#0;class#WarehouseBook#0" />
-            <element signature="method#NRL#0;class#WarehouseBook#0" />
-            <element signature="method#LNR#0;class#WarehouseBook#0" />
-            <element signature="method#simpleAVL_BST#0;class#WarehouseBook#0" />
-            <element signature="method#specialTraversal#0;class#WarehouseBook#0" />
-            <element signature="method#removeRedundantProduct#0;class#WarehouseBook#0" />
-            <element signature="method#getLevel#0;class#WarehouseBook#0" />
-            <element signature="method#getInforProduct#0;class#WarehouseBook#0" />
-            <element signature="method#treeToString#0;class#WarehouseBook#0" />
           </folding>
         </state>
       </provider>

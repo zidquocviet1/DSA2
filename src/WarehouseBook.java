@@ -79,15 +79,13 @@ public class WarehouseBook {
 		List<String> events = new ArrayList<>();
 		String[] event;
 
-		FileReader fr = new FileReader(file);
-		BufferedReader br = new BufferedReader(fr);
+		BufferedReader br = new BufferedReader(new FileReader(file));
 		String input;
 
 		while ((input = br.readLine()) != null){
 			event = input.split(" ");
 			events.addAll(Arrays.asList(event));
 		}
-		fr.close();
 		br.close();
 
 		process(events);
@@ -225,20 +223,19 @@ public class WarehouseBook {
 	// this method is defined to find the product with the closet id
 	private int findNode(WarehouseNode root, Integer idProduct, Integer min, Integer parent){
 		if (root == null) return parent;
-		else{
-			int value = Math.abs(root.getRecord().getProductID() - idProduct);
-			int cmp = idProduct.compareTo(root.getRecord().getProductID());
 
-			if (value < min) {
-				min = value;
-				parent = root.getRecord().getProductID();
-			}
+		int value = Math.abs(root.getRecord().getProductID() - idProduct);
+		int cmp = idProduct.compareTo(root.getRecord().getProductID());
 
-			if (cmp < 0)
-				return findNode(root.getLeft(), idProduct, min, parent);
-			else if (cmp > 0)
-				return findNode(root.getRight(), idProduct, min, parent);
+		if (value < min) {
+		    min = value;
+		    parent = root.getRecord().getProductID();
 		}
+
+		if (cmp < 0)
+		    return findNode(root.getLeft(), idProduct, min, parent);
+		else if (cmp > 0)
+		    return findNode(root.getRight(), idProduct, min, parent);
 		return parent;
 	}
 
