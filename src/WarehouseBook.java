@@ -443,12 +443,10 @@ public class WarehouseBook {
 		StringBuilder idProduct = new StringBuilder();
 		int size = product.length();
 
-		for (int i = 0; i < size - 2; i++){
-			idProduct.append(product.charAt(i));
-		}
+		idProduct.append(product.substring(0,size - 2));
 
 		infor.add(Integer.parseInt(idProduct.toString()));
-		infor.add(Integer.parseInt(product.charAt(size-2)+""+product.charAt(size-1)));
+		infor.add(Integer.parseInt(product.charAt(size - 2) + "" + product.charAt(size - 1)));
 
 		return infor;
 	}
@@ -457,13 +455,13 @@ public class WarehouseBook {
 		if (root == null) return;
 
 		String quantity = String.valueOf(root.getRecord().getQuantity());
-		String idProduct = String.valueOf(root.getRecord().getProductID());
+		StringBuilder idProduct = new StringBuilder(String.valueOf(root.getRecord().getProductID()));
 
 		quantity = quantity.length() == 1 ? "0"+quantity : quantity;
 		while (idProduct.length() != 3)
-			idProduct = "0"+idProduct;
+			idProduct.insert(0, "0");
 
-		output.append(idProduct + "" + quantity);
+		output.append(idProduct).append(quantity);
 
 		if (root.getLeft() == null && root.getRight() == null) return;
 
