@@ -375,18 +375,10 @@ public class WarehouseBook {
 		List<Integer> infor;
 		int idProduct, quantity;
 
-		infor = getInforProduct(NRL.get(0));
-		idProduct = infor.get(0);
-		quantity = infor.get(1);
-
-		ProductRecord pr = new ProductRecord(idProduct, quantity);
+		ProductRecord pr = new ProductRecord(getInforProduct(NRL.get(0)).get(0), getInforProduct(NRL.get(0)).get(1));
 		WarehouseNode root = new WarehouseNode(pr);
 
-		infor = getInforProduct(NRL.get(1));
-		idProduct = infor.get(0);
-		quantity = infor.get(1);
-
-		root = addProduct(quantity, idProduct, root);
+		root = addProduct(getInforProduct(NRL.get(1)).get(1), getInforProduct(NRL.get(1)).get(0), root);
 
 		for (int i = 2; i < NRL.size(); i++){
 			infor = getInforProduct(NRL.get(i));
