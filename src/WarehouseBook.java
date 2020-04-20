@@ -93,52 +93,50 @@ public class WarehouseBook {
 	
 	public void process(List<String> events){
 		for (String item : events){
-			char[] temp = item.toCharArray();
 			char idEvent;
 			int idProduct, quantity;
 
 			if (item.equals("0")) break;
 
-			if (temp.length == 5) {
-				idEvent = temp[0];
-				idProduct = Integer.parseInt(temp[1] + String.valueOf(temp[2]) + temp[3]);
-				quantity = Integer.parseInt(String.valueOf(temp[4]));
+			idEvent = item.charAt(0);
+			switch (idEvent){
+				case '1':
+					idProduct = Integer.parseInt(item.substring(1, 4));
+					quantity = Integer.parseInt(String.valueOf(item.charAt(4)));
 
-				switch (idEvent) {
-					case '1':
-						addProduct(quantity, idProduct);
-						break;
-					case '2':
-						orderProduct(idProduct,quantity);
-						break;
-					case '5':
-						if (root != null) {
-							List<String> rln = new ArrayList<>();
-							rln = RLN(root, rln);
-							root = specialTraversal(rln, idProduct, quantity);
-						}
-						break;
-				}
-			}
-			else if (temp.length == 2){
-				quantity = Integer.parseInt(String.valueOf(temp[1]));
-				if (root != null)
-					removeRedundantProduct(root, quantity);
-			}
-			else {
-				idEvent = temp[0];
-				switch (idEvent){
-					case '3':
-						StringBuilder a = new StringBuilder();
-						if (root != null)
-							root = simpleAVL_BST(LNR(root, a));
-						break;
-					case '4':
-						List<String> nrl = new ArrayList<>();
-						if (root != null)
-							root = complexAVL_BST(NRL(root, nrl));
-						break;
-				}
+					addProduct(quantity, idProduct);
+					break;
+				case '2':
+					idProduct = Integer.parseInt(item.substring(1, 4));
+					quantity = Integer.parseInt(String.valueOf(item.charAt(4)));
+
+					orderProduct(idProduct,quantity);
+					break;
+				case '3':
+					StringBuilder a = new StringBuilder();
+					if (root != null)
+						root = simpleAVL_BST(LNR(root, a));
+					break;
+				case '4':
+					List<String> nrl = new ArrayList<>();
+					if (root != null)
+						root = complexAVL_BST(NRL(root, nrl));
+					break;
+				case '5':
+					idProduct = Integer.parseInt(item.substring(1, 4));
+					quantity = Integer.parseInt(String.valueOf(item.charAt(4)));
+
+					if (root != null) {
+						List<String> rln = new ArrayList<>();
+						rln = RLN(root, rln);
+						root = specialTraversal(rln, idProduct, quantity);
+					}
+					break;
+				default:
+					quantity = Integer.parseInt(String.valueOf(item.charAt(1)));
+					if (root != null)
+						removeRedundantProduct(root, quantity);
+					break;
 			}
 		}
 	}
