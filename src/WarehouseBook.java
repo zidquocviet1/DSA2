@@ -218,7 +218,7 @@ public class WarehouseBook {
 		return root;
 	}
 
-	// this method is defined to find the product with the closet id
+	// this method is defined to find the product with the nearest id
 	private int findNode(WarehouseNode root, Integer idProduct, Integer min, Integer parent){
 		if (root == null) return parent;
 
