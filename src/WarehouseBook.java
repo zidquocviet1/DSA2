@@ -134,7 +134,9 @@ public class WarehouseBook {
 					break;
 				default:
 					quantity = Integer.parseInt(String.valueOf(item.charAt(1)));
-					if (root != null)
+					if (quantity <= 1)
+						root = null;
+					else if (root != null)
 						removeRedundantProduct(root, quantity);
 					break;
 			}
